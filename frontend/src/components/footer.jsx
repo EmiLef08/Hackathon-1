@@ -1,12 +1,15 @@
 import React from "react";
-import { Anchor, Footer as FooterGrommet, Text } from "grommet";
+import { Footer as FooterGrommet, Text } from "grommet";
 
 function Footer() {
   return (
-    <FooterGrommet background="brand" pad="medium">
-      <Text>Copyright</Text>
-      <Anchor label="About" />
-    </FooterGrommet>
+    <div>
+      <FooterGrommet background="light-4" justify="center" pad="small">
+        <Text textAlign="center" size="small">
+          © 2019 Copyright Grommet
+        </Text>
+      </FooterGrommet>
+    </div>
   );
 }
 

@@ -5,8 +5,8 @@ function Header() {
   return (
     <div>
       <box>
-        <Grommet theme="grommet">
-          <HeaderGrommet background="light-3" pad="small">
+        <Grommet>
+          <HeaderGrommet background="#6A4829" pad="medium" align="center">
             <Nav direction="row">
               <Anchor label="Home" href="#" />
               <Anchor label="Profile" href="#" />
