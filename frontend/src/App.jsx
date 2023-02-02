@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import User from "./pages/User";
-
+import Footer from "./components/footer";
+import { WorldMap } from "./components/WordlMap";
 import "./App.css";
 
 function App() {
