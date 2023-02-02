@@ -23,7 +23,7 @@ const placeProps = (name, color, showDrop) => ({
 });
 function Map() {
   const [showDrops, setShowDrops] = React.useState(true);
-  return (
+    return (
     <div>
       <Box align="left" pad="large">
         <CheckBox
