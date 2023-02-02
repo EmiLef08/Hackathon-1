@@ -11,6 +11,7 @@ function Header() {
             <Anchor label="Villes" href="/villes" color="#EFD9B0" />
           </Nav>
         </HeaderGrommet>
+
       </box>
     </div>
   );
