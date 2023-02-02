@@ -65,6 +65,10 @@ function Map() {
               location: [-54.801944, -68.303056],
               ...placeProps("Ushuaia", "graph-2", showDrops),
             },
+            {
+              location: [-0.828097, 11.598909],
+              ...placeProps("Gabon", "graph-3", showDrops),
+            },
           ]}
         />
       </Box>
