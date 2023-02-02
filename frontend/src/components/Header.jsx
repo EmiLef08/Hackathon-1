@@ -8,8 +8,8 @@ function Header() {
         <Grommet theme="grommet">
           <HeaderGrommet background="light-3" pad="small">
             <Nav direction="row">
-              <Anchor label="Home" href="#" />
-              <Anchor label="Profile" href="#" />
+              <Anchor label="Home" href="/" />
+              <Anchor label="City" href="/City" />
             </Nav>
           </HeaderGrommet>
         </Grommet>

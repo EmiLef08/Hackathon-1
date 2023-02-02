@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, CheckBox, Text, WorldMap } from "grommet";
+import { Box, Button, CheckBox, Text, WorldMap } from "grommet";
 
 const placeProps = (name, color, showDrop) => ({
   name,
@@ -36,10 +36,13 @@ function Map() {
             {
               location: [-33.8830555556, 151.216666667],
               ...placeProps("Sydney", "graph-1", showDrops),
+              onClick: () => {
+                window.location.href = "/frontend/src/pages/villes.jsx";
+              },
             },
             {
               location: [42.358056, -71.063611],
-              ...placeProps("Boston", "graph-2", showDrops),
+              ...placeProps("Boston ", "graph-2", showDrops),
             },
             {
               location: [51.507222, -0.1275],

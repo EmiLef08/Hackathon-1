@@ -4,7 +4,7 @@ const UserContext = createContext();
 
 export const useUserContext = () => useContext(UserContext);
 
-export const UserContextProvider = ({ children }) => {
+export function UserContextProvider({ children }) {
   const [city, setCity] = useState("");
 
   return (
@@ -17,4 +17,4 @@ export const UserContextProvider = ({ children }) => {
       {children}
     </UserContext.Provider>
   );
-};
+}
