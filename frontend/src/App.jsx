@@ -7,8 +7,8 @@ import "./App.css";
 import Tokyo from "./pages/Tokyo";
 import Svalbard from "./pages/Svalbard";
 import Quito from "./pages/Quito";
-import Boston from "./pages/Boston";
-
+import Boston from "./pages/LosAngeles";
+import LosAngeles from './pages/LosAngeles'
 function App() {
   return (
     <Grommet>
@@ -20,6 +20,7 @@ function App() {
             <Link to="/Svalbard" />
             <Link to="/Quito" />
             <Link to="/Boston" />
+            <Link to="/LosAngeles" />
           </nav>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -27,6 +28,7 @@ function App() {
             <Route path="/Svalbard" element={<Svalbard />} />
             <Route path="/Quito" element={<Quito />} />
             <Route path="/Boston" element={<Boston />} />
+            <Route path="/LosAngeles" element={<LosAngeles/>}/>
           </Routes>
         </UserContextProvider>
       </Router>
