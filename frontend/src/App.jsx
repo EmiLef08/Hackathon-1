@@ -1,12 +1,14 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
+import { UserContextProvider } from "./context/UserContext";
+
 import "./App.css";
 import Villes from "./pages/villes";
 
 function App() {
   return (
     <Router>
-      <div>
+      <UserContextProvider>
         <nav>
           <Link to="/" />
         </nav>
@@ -14,7 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="villes" element={<Villes />} />
         </Routes>
-      </div>
+      </UserContextProvider>
     </Router>
   );
 }
