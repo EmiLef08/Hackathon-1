@@ -59,6 +59,9 @@ function Map() {
             {
               location: [34.05, -118.25],
               ...placeProps("Los Angeles", "graph-2", showDrops),
+              onClick: () => {
+                window.location.href = "/LosAngeles";
+              },
             },
             {
               location: [35.689722, 139.692222],
