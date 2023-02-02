@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import User from "./pages/User";
-import Footer from "./components/footer";
-import { WorldMap } from "./components/WordlMap";
+import Button from "./components/Button";
+import Map from "./components/Map";
+
 import "./App.css";
 
 function App() {
@@ -23,6 +24,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="users" element={<User />} />
         </Routes>
+      </div>
+      <div>
+        <Button />
+      </div>
+      <div>
+        <Map />
       </div>
     </Router>
   );
