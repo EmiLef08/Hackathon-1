@@ -2,7 +2,7 @@ import React from "react";
 import { Clock } from "grommet";
 
 function Timer() {
-  return <Clock type="digital" />;
+  return <Clock type="analog" />;
 }
 
 export default Timer;

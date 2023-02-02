@@ -12,7 +12,7 @@ function grid() {
       <div>
         <Time />
       </div>
-      <div style={{ position: "relative", background: "#3c3c3c" }}>
+      <div style={{ position: "relative" }}>
         <Map />
       </div>
     </div>

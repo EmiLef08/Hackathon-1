@@ -23,7 +23,7 @@ const placeProps = (name, color, showDrop) => ({
 });
 function Map() {
   const [showDrops, setShowDrops] = React.useState(true);
-    return (
+  return (
     <div>
       <Box align="left" pad="large">
         <CheckBox
@@ -32,6 +32,7 @@ function Map() {
           onChange={() => setShowDrops(!showDrops)}
         />
         <WorldMap
+          color="#6E0D25"
           places={[
             {
               location: [-33.8830555556, 151.216666667],
