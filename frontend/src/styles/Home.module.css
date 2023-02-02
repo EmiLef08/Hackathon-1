@@ -6,14 +6,17 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;
-    background-color: #DCAB6B;
+    background-image: url("../assets/images/Tardis.jpg");
 }
 
 .titre {
+    margin: 2.5rem;
+    background-color: rgba(166, 184, 199, 0.4);
     text-align: center;
     justify-content: center;
     align-items: center;
     font-family: "Henny Penny", cursive;
+    color: rgb(0, 59, 111);
     letter-spacing: 0.2rem;
     font-size: 4rem;
     font-family: "Henny Penny", cursive;
