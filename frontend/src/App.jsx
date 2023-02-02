@@ -1,37 +1,36 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Grommet } from "grommet";
+import { UserContextProvider } from "./context/UserContext";
 import Home from "./pages/Home";
-import User from "./pages/User";
-import Button from "./components/Button";
-import Map from "./components/Map";
 
 import "./App.css";
+import Tokyo from "./pages/Tokyo";
+import Svalbard from "./pages/Svalbard";
+import Quito from "./pages/Quito";
+import Boston from "./pages/Boston";
 
 function App() {
   return (
-    <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="users" element={<User />} />
-        </Routes>
-      </div>
-      <div>
-        <Button />
-      </div>
-      <div>
-        <Map />
-      </div>
-    </Router>
+    <Grommet>
+      <Router>
+        <UserContextProvider>
+          <nav>
+            <Link to="/" />
+            <Link to="/Tokyo" />
+            <Link to="/Svalbard" />
+            <Link to="/Quito" />
+            <Link to="/Boston" />
+          </nav>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Tokyo" element={<Tokyo />} />
+            <Route path="/Svalbard" element={<Svalbard />} />
+            <Route path="/Quito" element={<Quito />} />
+            <Route path="/Boston" element={<Boston />} />
+          </Routes>
+        </UserContextProvider>
+      </Router>
+    </Grommet>
   );
 }
 
