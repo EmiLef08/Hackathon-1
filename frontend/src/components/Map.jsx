@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, CheckBox, Text, WorldMap } from "grommet";
 
-
 const placeProps = (name, color, showDrop) => ({
   name,
   color,
@@ -26,7 +25,7 @@ function Map() {
   const [showDrops, setShowDrops] = React.useState(true);
     return (
     <div>
-      <Box align="center" pad="large">
+      <Box align="left" pad="large">
         <CheckBox
           label="show"
           checked={showDrops}
@@ -38,7 +37,7 @@ function Map() {
               location: [-33.8830555556, 151.216666667],
               ...placeProps("Sydney", "graph-1", showDrops),
               onClick: () => {
-               window.location.href = "/villes";
+                window.location.href = "/villes";
               },
             },
             {
