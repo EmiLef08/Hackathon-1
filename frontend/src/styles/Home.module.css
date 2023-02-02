@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+
 .home {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: #DCAB6B;
+    
 }
-
 
 .titre {
     text-align: center;
     justify-content: center;
     align-items: center;
+    font-family: "Henny Penny", cursive;
+    letter-spacing: 0.2rem;
+    font-size: 4rem;
 }
