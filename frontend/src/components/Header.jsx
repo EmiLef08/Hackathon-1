@@ -9,7 +9,7 @@ function Header() {
           <HeaderGrommet background="light-3" pad="small">
             <Nav direction="row">
               <Anchor label="Home" href="#" />
-              <Anchor label="Profile" href="#" />
+              <Anchor label="City" href="../pages/City" />
             </Nav>
           </HeaderGrommet>
         </Grommet>
