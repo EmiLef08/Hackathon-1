@@ -1,17 +1,18 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
-import User from "./pages/User";
-
 import "./App.css";
+import City from "./pages/City";
 
 function App() {
   return (
     <Router>
       <div>
-        <Link to="/" />
+        <nav>
+          <Link to="/" />
+        </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="users" element={<User />} />
+          <Route path="City" element={<City />} />
         </Routes>
       </div>
     </Router>

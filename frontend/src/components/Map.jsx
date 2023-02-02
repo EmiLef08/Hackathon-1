@@ -36,6 +36,9 @@ function Map() {
             {
               location: [-33.8830555556, 151.216666667],
               ...placeProps("Sydney", "graph-1", showDrops),
+              onClick: () => {
+                window.location.href = "/sydney.jsx";
+              },
             },
             {
               location: [42.358056, -71.063611],
