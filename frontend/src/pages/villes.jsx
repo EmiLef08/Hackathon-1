@@ -1,8 +1,9 @@
 import React from "react";
 import CityBox from "../components/CityBox";
-import Footer from "../components/Footer";
+import Footer from "../components/footer";
 import Header from "../components/Header";
 import Image from "../components/Image";
+import axios from "axios"
 
 function Villes() {
   return (
