@@ -23,9 +23,9 @@ const placeProps = (name, color, showDrop) => ({
 });
 function Map() {
   const [showDrops, setShowDrops] = React.useState(true);
-  return (
+    return (
     <div>
-      <Box align="center" pad="large">
+      <Box align="left" pad="large">
         <CheckBox
           label="show"
           checked={showDrops}
@@ -36,10 +36,13 @@ function Map() {
             {
               location: [-33.8830555556, 151.216666667],
               ...placeProps("Sydney", "graph-1", showDrops),
+              onClick: () => {
+                window.location.href = "/villes";
+              },
             },
             {
               location: [42.358056, -71.063611],
-              ...placeProps("Boston", "graph-2", showDrops),
+              ...placeProps("Boston ", "graph-2", showDrops),
             },
             {
               location: [51.507222, -0.1275],
