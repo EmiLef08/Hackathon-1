@@ -1,9 +1,8 @@
 import React from "react";
 import Grid from "../components/Grid";
-import Footer from "../components/footer";
+// import Footer from "../components/Footer";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
-
 
 export default function Home() {
   return (
@@ -13,9 +12,7 @@ export default function Home() {
       </div>
       <h1 className={styles.titre}>Tempus itinerantur</h1>
       <Grid />
-      <div>
-        <Footer />
-      </div>
+      <div>{/* <Footer /> */}</div>
     </div>
   );
 }
