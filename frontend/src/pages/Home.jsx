@@ -1,6 +1,6 @@
 import React from "react";
 import Grid from "../components/Grid";
-import Footer from "../components/Footer";
+import Footer from "../components/footer";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
 

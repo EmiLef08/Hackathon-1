@@ -25,7 +25,7 @@ function Map() {
   const [showDrops, setShowDrops] = React.useState(true);
   return (
     <div>
-      <Box align="left" pad="large">
+      <Box align="end" pad="medium">
         <CheckBox
           label="show"
           checked={showDrops}
