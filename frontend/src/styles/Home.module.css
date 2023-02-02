@@ -4,9 +4,9 @@
 .home {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    min-height: 100vh;
     background-color: #DCAB6B;
-    
 }
 
 .titre {
@@ -16,4 +16,8 @@
     font-family: "Henny Penny", cursive;
     letter-spacing: 0.2rem;
     font-size: 4rem;
+    font-family: "Henny Penny", cursive;
+    letter-spacing: 0.2rem;
+    font-size: 4rem;
 }
+

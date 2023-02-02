@@ -1,8 +1,9 @@
 import React from "react";
-import Map from "../components/Map";
-import Footer from "../components/Footer";
+import Grid from "../components/Grid";
+import Footer from "../components/footer";
 import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
+
 
 export default function Home() {
   return (
@@ -11,9 +12,7 @@ export default function Home() {
         <Header />
       </div>
       <h1 className={styles.titre}>Tempus itinerantur</h1>
-      <div>
-        <Map />
-      </div>
+      <Grid />
       <div>
         <Footer />
       </div>
