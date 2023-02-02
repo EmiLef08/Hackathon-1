@@ -1,12 +1,20 @@
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap%27');
 
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #DCAB6B;
+}
 
 .titre {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Henny Penny", cursive;
+    letter-spacing: 0.2rem;
+    font-size: 4rem;
 }
+

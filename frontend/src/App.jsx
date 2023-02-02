@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Grommet } from "grommet";
 import Home from "./pages/Home";
-import { UserContextProvider } from "./context/UserContext";
 
 import "./App.css";
 import Tokyo from "./pages/Tokyo";
@@ -10,6 +10,7 @@ import Boston from "./pages/Boston";
 
 function App() {
   return (
+  <Grommet>
     <Router>
       <UserContextProvider>
         <nav>
@@ -28,6 +29,7 @@ function App() {
         </Routes>
       </UserContextProvider>
     </Router>
+   </Grommet>
   );
 }
 
