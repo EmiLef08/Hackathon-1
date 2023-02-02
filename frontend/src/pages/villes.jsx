@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Image from "../components/Image";
 
-function City() {
+function Villes() {
   return (
     <div>
       <Header />
@@ -17,4 +17,4 @@ function City() {
   );
 }
 
-export default City;
+export default Villes;

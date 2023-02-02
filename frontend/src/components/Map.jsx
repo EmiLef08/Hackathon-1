@@ -37,7 +37,7 @@ function Map() {
               location: [-33.8830555556, 151.216666667],
               ...placeProps("Sydney", "graph-1", showDrops),
               onClick: () => {
-                window.location.href = "http://localhost:3000/city";
+                window.location.href = "/frontend/src/pages/villes.jsx";
               },
             },
             {

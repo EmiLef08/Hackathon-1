@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import "./App.css";
-import City from "./pages/City";
+import Villes from "./pages/villes";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="City" element={<City />} />
+          <Route path="villes" element={<Villes />} />
         </Routes>
       </div>
     </Router>
