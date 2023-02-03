@@ -8,6 +8,7 @@
 .svalbardEffect{
     background-image: url("../assets/images/Viking4.jpg");
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .box {
