@@ -2,11 +2,10 @@ import { Image as ImageGrommet, Box, Carousel } from "grommet";
 import React, { useEffect, useRef } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import styles from "../styles/Tokyo.module.css";
+import styles from "../styles/Boston.module.css";
 import boston1 from "../assets/images/bostonStreet.png";
 import boston2 from "../assets/images/boston.png";
 import boston3 from "../assets/images/Broadway_theatres_1920.jpg";
-import boston4 from "../assets/images/boston4.jpg";
 import sound from "../assets/images/tardis-sound (2).mp3";
 import "../font/Kashima Demo.otf";
 
@@ -16,7 +15,7 @@ function Boston() {
     audioRef.current.play();
   }, []);
   return (
-    <div>
+    <div className={styles.bostonEffect}>
       <div style={{ display: "none" }}>
         <audio ref={audioRef} controls>
           <track kind="captions" />
@@ -24,24 +23,6 @@ function Boston() {
         </audio>
       </div>
       <Header />
-      <div className="box">
-        <Box
-          height="large"
-          width="Large"
-          overflow="hidden"
-          className={styles.carousel}
-        >
-          <Carousel fill="true" play={2000} alignSelf="baseline">
-            <ImageGrommet fit="cover" src={boston1} />
-            <ImageGrommet fit="cover" src={boston3} />
-            <ImageGrommet fit="cover" src={boston2} />
-          </Carousel>
-        </Box>
-      </div>
-      <div className="hole" />
-      <Box fit="cover" className={styles.img}>
-        <ImageGrommet src={boston4} alt="fallback image" />
-      </Box>
       <div className={styles.text}>
         <Box>
           Boston pendant l'ère de la Prohibition (1920-1933) était une ville
@@ -59,6 +40,21 @@ function Boston() {
           aux citoyens de Boston, qui pouvaient enfin boire légalement.
         </Box>
       </div>
+      <div className="box">
+        <Box
+          height="large"
+          width="Large"
+          overflow="hidden"
+          className={styles.carouselBoston}
+        >
+          <Carousel fill="true" play={2000} alignSelf="baseline">
+            <ImageGrommet fit="cover" src={boston1} />
+            <ImageGrommet fit="cover" src={boston3} />
+            <ImageGrommet fit="cover" src={boston2} />
+          </Carousel>
+        </Box>
+      </div>
+      <div className="hole" />
       <Footer />
     </div>
   );

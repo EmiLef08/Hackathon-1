@@ -5,8 +5,8 @@
     
 }
 
-.tokyoEffect{
-    background-image: url("../assets/images/Samurai.png");
+.bostonEffect{
+    background-image: url("../assets/images/boston4.jpg");
     background-attachment: fixed;
 }
 
@@ -17,20 +17,10 @@
     justify-content: center;
     
 }
-.carousel{
-    /* position:absolute; */
-    /* top: 40%;
-    left: 30%; */
+.carouselBoston{
     width: 56%;
     height: auto;
     margin: 20rem;
-}
-
-.carousselSvalbard{
-    position: absolute;
-        top: 30%;
-        left: 20%;
-        right:20%
 }
 
 .text{

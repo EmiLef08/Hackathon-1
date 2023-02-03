@@ -1,9 +1,7 @@
-
-import { React, useState } from "react";
-import { Image as ImageGrommet, Box, Carousel, Button } from "grommet";
+import { React, useState, useEffect, useRef } from "react";
+import { Image as ImageGrommet, Box, Carousel } from "grommet";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import imageSamourai from "../assets/images/Samurai.png";
 import styles from "../styles/Tokyo.module.css";
 import samurai1 from "../assets/images/samurai1.jpeg";
 import samurai2 from "../assets/images/samurai2.jpeg";
@@ -11,7 +9,6 @@ import samurais from "../assets/images/samurais.jpg";
 import "../font/Kashima Demo.otf";
 import gif from "../assets/images/Samurai_coupe.mp4";
 import sound from "../assets/images/tardis-sound (2).mp3";
-
 
 function Tokyo() {
   const [showPopup, setShowPopup] = useState(false);
@@ -21,48 +18,16 @@ function Tokyo() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.tokyoEffect}>
       <div style={{ display: "none" }}>
         <audio ref={audioRef} controls>
           <track kind="captions" />
           <source src={sound} type="audio/mpeg" />
         </audio>
       </div>
-      <Header />
-      <div className="box">
-        <Box
-          height="large"
-          width="Large"
-          overflow="hidden"
-          className={styles.carousel}
-        >
-          <Carousel fill="true" play={2000} alignSelf="baseline">
-            <ImageGrommet fit="cover" src={samurai1} />
-            <ImageGrommet fit="cover" src={samurai2} />
-            <ImageGrommet fit="cover" src={samurais} />
-          </Carousel>
-        </Box>
+      <div className={styles.header}>
+        <Header />
       </div>
-      <Box fit="cover" className={styles.img}>
-        <ImageGrommet src={imageSamourai} alt="fallback image" />
-        <Button
-          type="button"
-          onClick={() => setShowPopup(true)}
-          className="button"
-          display="none"
-        >
-          {" "}
-          Trouver le samourai{" "}
-        </Button>
-        {showPopup && (
-          <div className="popup">
-            <p>Bravo, vous avez trouvé !</p>
-            <video type="video/mp4" src={gif} autoPlay loop muted>
-              <track kind="captions" />
-            </video>
-          </div>
-        )}
-      </Box>
       <div className={styles.text}>
         <Box>
           La vie au temps des samourais était très différente de la vie
@@ -78,8 +43,21 @@ function Tokyo() {
           strictement tenus de respecter la loi et les devoirs
         </Box>
       </div>
-<<<<<<< HEAD
-      <div>
+      <div className="box">
+        <Box
+          height="large"
+          width="Large"
+          overflow="hidden"
+          className={styles.carousel}
+        >
+          <Carousel fill="true" play={2000} alignSelf="stretch">
+            <ImageGrommet fit="cover" src={samurai1} />
+            <ImageGrommet fit="cover" src={samurai2} />
+            <ImageGrommet fit="cover" src={samurais} />
+          </Carousel>
+        </Box>
+      </div>
+      <div className={styles.buttonEffect}>
         <button
           type="button"
           onClick={() => setShowPopup(true)}
@@ -90,11 +68,13 @@ function Tokyo() {
         {showPopup && (
           <div className="popup">
             <p>Bravo, vous avez trouvé !</p>
+            <video type="video/mp4" src={gif} autoPlay loop muted>
+              <track kind="captions" />
+            </video>
           </div>
         )}
       </div>
-=======
->>>>>>> 97210117fe335aa464077712cfab991125a75664
+      <div className="hole" />
       <Footer />
     </div>
   );
