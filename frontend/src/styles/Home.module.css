@@ -1,22 +1,54 @@
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Solitreo&display=swap");
 
-.home {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 100vh;
-  background-color: #dcab6b;
+
+.home{  
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-image: url("../assets/images/interieur-tardis.jpg");
+    background-attachment: fixed;
 }
 
 .titre {
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  font-family: "Henny Penny", cursive;
-  letter-spacing: 0.2rem;
-  font-size: 4rem;
-  font-family: "Henny Penny", cursive;
-  letter-spacing: 0.2rem;
-  font-size: 4rem;
+    margin: 2.5rem;
+    background-color: rgba(166, 184, 199, 0.7);
+    border-radius: 13px 13px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: "Henny Penny", cursive;
+    color: rgb(0, 59, 111);
+    letter-spacing: 0.2rem;
+    font-size: 4rem;
 }
+
+.picture img {
+    background-color: rgba(166, 184, 199, 0.5);
+    width: 12rem;
+    height: auto;
+    border-radius: 100% 100%;
+}
+
+.titre p {
+    height: auto;
+    padding: 2rem;
+    font-family: "Solitreo", cursive;
+    font-size: 2rem;
+    line-height: 2.1rem;
+    color: rgb(0, 32, 60);
+    font-weight: bold;
+}
+
+.map {
+    background-color: rgba(0, 59, 111, 0.5);
+    margin: 3rem;
+    display: grid;
+}
+
+.map WoldMap {
+    width: 90%;
+}
+

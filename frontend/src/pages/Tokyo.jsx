@@ -1,3 +1,4 @@
+
 import { React, useState } from "react";
 import { Image as ImageGrommet, Box, Carousel, Button } from "grommet";
 import Footer from "../components/Footer";
@@ -9,12 +10,24 @@ import samurai2 from "../assets/images/samurai2.jpeg";
 import samurais from "../assets/images/samurais.jpg";
 import "../font/Kashima Demo.otf";
 import gif from "../assets/images/Samurai_coupe.mp4";
+import sound from "../assets/images/tardis-sound (2).mp3";
+
 
 function Tokyo() {
   const [showPopup, setShowPopup] = useState(false);
+  const audioRef = useRef(null);
+  useEffect(() => {
+    audioRef.current.play();
+  }, []);
 
   return (
     <div>
+      <div style={{ display: "none" }}>
+        <audio ref={audioRef} controls>
+          <track kind="captions" />
+          <source src={sound} type="audio/mpeg" />
+        </audio>
+      </div>
       <Header />
       <div className="box">
         <Box
