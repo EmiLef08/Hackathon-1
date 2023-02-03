@@ -42,11 +42,11 @@ INSERT INTO `villes` VALUES
 (2, 'Boston','boston.png','Prohibition'),
 (3, 'Quito', 'quito.png','Maya'),
 (4, 'Svalbard','svalbard.png','Viking'),
-(5, Los_Angeles ,ff.png,futur),
-(6,Ushuaia , ff.png, beuhhh ),
-( 7 , Gabon ,fff.png ,ollololo),
-(  8 , Sydney,gg.png, hier),
-(  9 , London ,z.png,dans une heure);
+(5, 'Los_Angeles' ,'ff.png','futur'),
+(6,'Ushuaia' , 'ff.png', 'beuhhh' ),
+( 7 , 'Gabon' ,'fff.png' ,'ollololo'),
+(  8 , 'Sydney','gg.png', 'hier'),
+(  9 , 'London' ,'z.png','dans une heure');
 
 
 
