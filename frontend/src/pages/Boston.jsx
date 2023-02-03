@@ -47,7 +47,7 @@ function Boston() {
           overflow="hidden"
           className={styles.carouselBoston}
         >
-          <Carousel fill="true" play={2000} alignSelf="baseline">
+          <Carousel fill="true" play={2000} alignSelf="center">
             <ImageGrommet fit="cover" src={boston1} />
             <ImageGrommet fit="cover" src={boston3} />
             <ImageGrommet fit="cover" src={boston2} />

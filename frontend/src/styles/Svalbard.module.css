@@ -5,18 +5,20 @@
     
 }
 
-.bostonEffect{
-    background-image: url("../assets/images/boston4.jpg");
+.svalbardEffect{
+    background-image: url("../assets/images/Viking4.jpg");
     background-attachment: fixed;
-    background-size: cover;
 }
 
 .box {
-    margin: 2rem;
+    margin: 3rem;
     margin-left: 15rem;
+    display: grid;
+    justify-content: center;
     
 }
-.carouselBoston{
+
+.carousselSvalbard{
     width: 56%;
     height: auto;
     margin-left: 22%;

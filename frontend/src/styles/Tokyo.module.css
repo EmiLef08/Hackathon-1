@@ -12,25 +12,13 @@
 
 .box {
     margin: 2rem;
-    margin-left: 15rem;
-    display: grid;
-    justify-content: center;
-    
+    margin-left: 15rem;    
 }
-.carousel{
-    /* position:absolute; */
-    /* top: 40%;
-    left: 30%; */
+.carouselTokyo{
     width: 56%;
     height: auto;
-    margin: 20rem;
-}
-
-.carousselSvalbard{
-    position: absolute;
-        top: 30%;
-        left: 20%;
-        right:20%
+    margin-left: 22%;
+    margin-bottom: 3rem;
 }
 
 .text{

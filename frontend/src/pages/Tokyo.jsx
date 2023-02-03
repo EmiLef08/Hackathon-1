@@ -40,7 +40,7 @@ function Tokyo() {
           aux arts martiaux et aux armes à feu. Ils étaient également formés à
           l'étiquette et à la conduite et devaient se comporter avec dignité et
           respect. La vie des samourais était très rigide et ils étaient
-          strictement tenus de respecter la loi et les devoirs
+          strictement tenus de respecter la loi et les devoirs.
         </Box>
       </div>
       <div className="box">
@@ -48,9 +48,9 @@ function Tokyo() {
           height="large"
           width="Large"
           overflow="hidden"
-          className={styles.carousel}
+          className={styles.carouselTokyo}
         >
-          <Carousel fill="true" play={2000} alignSelf="stretch">
+          <Carousel fill="true" play={2000} alignSelf="center">
             <ImageGrommet fit="cover" src={samurai1} />
             <ImageGrommet fit="cover" src={samurai2} />
             <ImageGrommet fit="cover" src={samurais} />
@@ -60,7 +60,7 @@ function Tokyo() {
       <div className={styles.buttonEffect}>
         <button
           type="button"
-          onClick={() => setShowPopup(true)}
+          onClick={() => setShowPopup(!showPopup)}
           className="button"
         >
           Trouver le samourai
