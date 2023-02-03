@@ -1,5 +1,4 @@
-
-import { React, useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Image as ImageGrommet, Box, Carousel, Button } from "grommet";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -11,7 +10,6 @@ import samurais from "../assets/images/samurais.jpg";
 import "../font/Kashima Demo.otf";
 import gif from "../assets/images/Samurai_coupe.mp4";
 import sound from "../assets/images/tardis-sound (2).mp3";
-
 
 function Tokyo() {
   const [showPopup, setShowPopup] = useState(false);
