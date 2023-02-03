@@ -5,6 +5,8 @@ import Bienvenue from "../assets/images/Bienvenue.png";
 import Interieur from "../assets/images/A_interieurdu.png";
 import Tardis from "../assets/images/TARDIS.png";
 import Map from "../components/Map";
+import tardisCouv from "../assets/images/couv-tardis.png";
+import style from "../styles/tardis.module.css";
 
 export default function Home() {
   return (
@@ -26,6 +28,9 @@ export default function Home() {
       </div>
       <div className={styles.map}>
         <Map />
+      </div>
+      <div className={style.tardisFly}>
+        <img src={tardisCouv} alt="Tardis" />
       </div>
       <div>
         <Footer />
