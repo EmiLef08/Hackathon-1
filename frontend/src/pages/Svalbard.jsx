@@ -1,3 +1,4 @@
+import React, { useEffect, useRef } from "react";
 import { Image as ImageGrommet, Box, Carousel } from "grommet";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -7,10 +8,21 @@ import Viking1 from "../assets/images/Viking.jpg";
 import Viking4 from "../assets/images/Viking4.jpg";
 import Viking5 from "../assets/images/vikings-7714558_1280.jpg";
 import "../font/Kashima Demo.otf";
+import sound from "../assets/images/tardis-sound (2).mp3";
 
 function Svalbard() {
+  const audioRef = useRef(null);
+  useEffect(() => {
+    audioRef.current.play();
+  }, []);
   return (
     <div>
+      <div style={{ display: "none" }}>
+        <audio ref={audioRef} controls>
+          <track kind="captions" />
+          <source src={sound} type="audio/mpeg" />
+        </audio>
+      </div>
       <Header />
       <div className="box">
         <Box
