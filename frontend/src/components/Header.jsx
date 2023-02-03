@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function Header() {
   const [villes, setVilles] = useState([]);
-
+  const [lien, setLien] = useState("");
   useEffect(() => {
     fetch("http://localhost:5000/villes")
       .then((response) => response.json())
@@ -13,19 +13,17 @@ function Header() {
   }, []);
 
   const handleSelect = (e) => {
-    let lien;
     if (e.target.value === `Tokyo`) {
-      
-     lien = "/Tokyo";
+      setLien("/Tokyo");
     }
     if (e.target.value === `Boston`) {
-     lien = "/Boston";
+      setLien("/Boston");
     }
     if (e.target.value === `Svalbard`) {
-      window.location.href = "/Svalbard";
+      setLien("/Svalbard");
     }
     if (e.target.value === `Quito`) {
-      window.location.href = "/Quito";
+      setLien("/Quito");
     }
   };
 
@@ -34,9 +32,9 @@ function Header() {
       <box>
         <HeaderGrommet background="#6A4829" pad="medium">
           <Nav direction="row" align="center">
-           
+            <Link to="/">
               <Anchor label="Home" color="#EFD9B0" />
-              <Link to="/">
+            </Link>
             <form>
               <label>
                 Destinations{" "}
@@ -50,7 +48,6 @@ function Header() {
                 </select>
               </label>
             </form>
-            </Link>
           </Nav>
         </HeaderGrommet>
       </box>
