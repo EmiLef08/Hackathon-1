@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { Grommet } from "grommet";
 import { UserContextProvider } from "./context/UserContext";
 import Home from "./pages/Home";
-import UserContextProvider from "./context/UserContext";
 
 import "./App.css";
 import Tokyo from "./pages/Tokyo";
