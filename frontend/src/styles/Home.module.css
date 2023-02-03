@@ -43,7 +43,7 @@
 }
 
 .map {
-    background-color: rgba(0, 59, 111, 0.5);
+    background-color: rgba(0, 59, 111, 0.65);
     margin: 3rem;
     display: grid;
 }

@@ -5,16 +5,20 @@
     
 }
 
-.tokyoEffect{
-    background-image: url("../assets/images/Samurai.png");
+.svalbardEffect{
+    background-image: url("../assets/images/Viking4.jpg");
     background-attachment: fixed;
 }
 
 .box {
-    margin: 2rem;
-    margin-left: 15rem;    
+    margin: 3rem;
+    margin-left: 15rem;
+    display: grid;
+    justify-content: center;
+    
 }
-.carouselTokyo{
+
+.carousselSvalbard{
     width: 56%;
     height: auto;
     margin-left: 22%;
@@ -28,14 +32,3 @@
     padding: 30px;
     margin-bottom: 2rem;
 }
-
-.button{
-  opacity: 0.5;
-}
-
-
-/* .buttonEffect{
-    position: absolute;
-    z-index: 125;
-    padding-bottom: 3rem;
-} */

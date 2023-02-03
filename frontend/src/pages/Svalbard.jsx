@@ -2,10 +2,9 @@ import React, { useEffect, useRef } from "react";
 import { Image as ImageGrommet, Box, Carousel } from "grommet";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import styles from "../styles/Tokyo.module.css";
+import styles from "../styles/Svalbard.module.css";
 import Viking2 from "../assets/images/floki.jpg.webp";
 import Viking1 from "../assets/images/Viking.jpg";
-import Viking4 from "../assets/images/Viking4.jpg";
 import Viking5 from "../assets/images/vikings-7714558_1280.jpg";
 import "../font/Kashima Demo.otf";
 import sound from "../assets/images/tardis-sound (2).mp3";
@@ -16,7 +15,7 @@ function Svalbard() {
     audioRef.current.play();
   }, []);
   return (
-    <div>
+    <div className={styles.svalbardEffect}>
       <div style={{ display: "none" }}>
         <audio ref={audioRef} controls>
           <track kind="captions" />
@@ -24,24 +23,6 @@ function Svalbard() {
         </audio>
       </div>
       <Header />
-      <div className="box">
-        <Box
-          height="large"
-          width="Large"
-          overflow="hidden"
-          className={styles.carousselSvalbard}
-        >
-          <Carousel fill="true" play={2000} alignSelf="center">
-            <ImageGrommet fit="cover" src={Viking1} />
-            <ImageGrommet fit="cover" src={Viking2} />
-            <ImageGrommet fit="cover" src={Viking5} />
-          </Carousel>
-        </Box>
-      </div>
-      <div className="hole" />
-      <Box fit="cover" className={styles.img}>
-        <ImageGrommet src={Viking4} alt="fallback image" />
-      </Box>
       <div className={styles.text}>
         <Box>
           La vie des Vikings norvégiens était marquée par leurs traditions de
@@ -59,6 +40,21 @@ function Svalbard() {
           des décisions et résoudre des conflits.
         </Box>
       </div>
+      <div className="box">
+        <Box
+          height="large"
+          width="Large"
+          overflow="hidden"
+          className={styles.carousselSvalbard}
+        >
+          <Carousel fill="true" play={2000} alignSelf="center">
+            <ImageGrommet fit="cover" src={Viking1} />
+            <ImageGrommet fit="cover" src={Viking2} />
+            <ImageGrommet fit="cover" src={Viking5} />
+          </Carousel>
+        </Box>
+      </div>
+      <div className="hole" />
       <Footer />
     </div>
   );

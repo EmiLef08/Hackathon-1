@@ -5,16 +5,18 @@
     
 }
 
-.tokyoEffect{
-    background-image: url("../assets/images/Samurai.png");
+.bostonEffect{
+    background-image: url("../assets/images/boston4.jpg");
     background-attachment: fixed;
+    background-size: cover;
 }
 
 .box {
     margin: 2rem;
-    margin-left: 15rem;    
+    margin-left: 15rem;
+    
 }
-.carouselTokyo{
+.carouselBoston{
     width: 56%;
     height: auto;
     margin-left: 22%;
@@ -28,14 +30,3 @@
     padding: 30px;
     margin-bottom: 2rem;
 }
-
-.button{
-  opacity: 0.5;
-}
-
-
-/* .buttonEffect{
-    position: absolute;
-    z-index: 125;
-    padding-bottom: 3rem;
-} */

@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef } from "react";
-import { Image as ImageGrommet, Box, Carousel, Button } from "grommet";
+import { React, useState, useEffect, useRef } from "react";
+import { Image as ImageGrommet, Box, Carousel } from "grommet";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import imageSamourai from "../assets/images/Samurai.png";
 import styles from "../styles/Tokyo.module.css";
 import samurai1 from "../assets/images/samurai1.jpeg";
 import samurai2 from "../assets/images/samurai2.jpeg";
@@ -19,48 +18,16 @@ function Tokyo() {
   }, []);
 
   return (
-    <div>
+    <div className={styles.tokyoEffect}>
       <div style={{ display: "none" }}>
         <audio ref={audioRef} controls>
           <track kind="captions" />
           <source src={sound} type="audio/mpeg" />
         </audio>
       </div>
-      <Header />
-      <div className="box">
-        <Box
-          height="large"
-          width="Large"
-          overflow="hidden"
-          className={styles.carousel}
-        >
-          <Carousel fill="true" play={2000} alignSelf="baseline">
-            <ImageGrommet fit="cover" src={samurai1} />
-            <ImageGrommet fit="cover" src={samurai2} />
-            <ImageGrommet fit="cover" src={samurais} />
-          </Carousel>
-        </Box>
+      <div className={styles.header}>
+        <Header />
       </div>
-      <Box fit="cover" className={styles.img}>
-        <ImageGrommet src={imageSamourai} alt="fallback image" />
-        <Button
-          type="button"
-          onClick={() => setShowPopup(true)}
-          className="button"
-          display="none"
-        >
-          {" "}
-          Trouver le samourai{" "}
-        </Button>
-        {showPopup && (
-          <div className="popup">
-            <p>Bravo, vous avez trouvé !</p>
-            <video type="video/mp4" src={gif} autoPlay loop muted>
-              <track kind="captions" />
-            </video>
-          </div>
-        )}
-      </Box>
       <div className={styles.text}>
         <Box>
           La vie au temps des samourais était très différente de la vie
@@ -73,9 +40,41 @@ function Tokyo() {
           aux arts martiaux et aux armes à feu. Ils étaient également formés à
           l'étiquette et à la conduite et devaient se comporter avec dignité et
           respect. La vie des samourais était très rigide et ils étaient
-          strictement tenus de respecter la loi et les devoirs
+          strictement tenus de respecter la loi et les devoirs.
         </Box>
       </div>
+      <div className="box">
+        <Box
+          height="large"
+          width="Large"
+          overflow="hidden"
+          className={styles.carouselTokyo}
+        >
+          <Carousel fill="true" play={2000} alignSelf="center">
+            <ImageGrommet fit="cover" src={samurai1} />
+            <ImageGrommet fit="cover" src={samurai2} />
+            <ImageGrommet fit="cover" src={samurais} />
+          </Carousel>
+        </Box>
+      </div>
+      <div className={styles.buttonEffect}>
+        <button
+          type="button"
+          onClick={() => setShowPopup(!showPopup)}
+          className="button"
+        >
+          Trouver le samourai
+        </button>
+        {showPopup && (
+          <div className="popup">
+            <p>Bravo, vous avez trouvé !</p>
+            <video type="video/mp4" src={gif} autoPlay loop muted>
+              <track kind="captions" />
+            </video>
+          </div>
+        )}
+      </div>
+      <div className="hole" />
       <Footer />
     </div>
   );
