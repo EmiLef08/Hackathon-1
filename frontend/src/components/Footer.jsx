@@ -7,7 +7,7 @@ function Footer() {
       <Box direction="column" justify="end">
         <FooterGrommet background="light-4" justify="center" pad="small">
           <Text textAlign="center" size="small">
-            © 2019 Copyright Grommet
+            © 2023 BAD WOLF
           </Text>
         </FooterGrommet>
       </Box>
