@@ -13,11 +13,13 @@ function Header() {
   }, []);
 
   const handleSelect = (e) => {
+    let lien;
     if (e.target.value === `Tokyo`) {
-      window.location.href = "/Tokyo";
+      
+     lien = "/Tokyo";
     }
     if (e.target.value === `Boston`) {
-      window.location.href = "/Boston";
+     lien = "/Boston";
     }
     if (e.target.value === `Svalbard`) {
       window.location.href = "/Svalbard";
@@ -32,9 +34,9 @@ function Header() {
       <box>
         <HeaderGrommet background="#6A4829" pad="medium">
           <Nav direction="row" align="center">
-            <Link to="/">
+           
               <Anchor label="Home" color="#EFD9B0" />
-            </Link>
+              <Link to="/">
             <form>
               <label>
                 Destinations{" "}
@@ -48,6 +50,7 @@ function Header() {
                 </select>
               </label>
             </form>
+            </Link>
           </Nav>
         </HeaderGrommet>
       </box>
