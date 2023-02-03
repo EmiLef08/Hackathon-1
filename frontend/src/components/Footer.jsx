@@ -27,9 +27,7 @@ function Footer() {
           onClick={() => setShowLayer(true)}
         >
           <Text textAlign="center" size="small">
-
             © 2023 BAD WOLF
-            
           </Text>
         </FooterGrommet>
       </Box>
