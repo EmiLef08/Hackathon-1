@@ -3,9 +3,17 @@
     src: url("Kashima Demo.otf") format("opentype");
 
 }.carousel{
-    position: absolute;
+    position:absolute;
     top: 30%;
     left: 30%;
+    
+}
+
+.carousselSvalbard{
+    position: absolute;
+        top: 30%;
+        left: 20%;
+        right:20%
 }
 
 .text{
