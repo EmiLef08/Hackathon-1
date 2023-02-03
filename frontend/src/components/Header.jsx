@@ -13,7 +13,7 @@ function Header() {
   }, []);
 
   const handleSelect = (e) => {
-    if (e.target.value === `Tokio`) {
+    if (e.target.value === `Tokyo`) {
       window.location.href = "/Tokyo";
     }
     if (e.target.value === `Boston`) {
