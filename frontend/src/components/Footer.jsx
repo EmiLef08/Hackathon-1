@@ -12,7 +12,10 @@ function Footer() {
           onClickOutside={() => setShowLayer(false)}
         >
           <Box pad="medium" gap="small" width="medium">
-            <Text>This is a pop up!</Text>
+            <Text>
+              Fais par l'équipe Z : <br />
+              Emeline Lefebvre, David Abruzzo, Pierre Aubin et Yohann Deletrez
+            </Text>
           </Box>
         </Layer>
       )}
