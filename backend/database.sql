@@ -38,10 +38,18 @@ CREATE TABLE `villes` (
 LOCK TABLES `villes` WRITE;
 /*!40000 ALTER TABLE `villes` DISABLE KEYS */;
 INSERT INTO `villes` VALUES
-(1,'Tokio','tokio.png','Samourai'),
+(1,'Tokyo','tokio.png','Samourai'),
 (2, 'Boston','boston.png','Prohibition'),
 (3, 'Quito', 'quito.png','Maya'),
-(4, 'Svalbard','svalbard.png','Viking');
+(4, 'Svalbard','svalbard.png','Viking'),
+(5, 'Los_Angeles' ,'ff.png','futur'),
+(6,'Ushuaia' , 'ff.png', 'beuhhh' ),
+( 7 , 'Gabon' ,'fff.png' ,'ollololo'),
+(  8 , 'Sydney','gg.png', 'hier'),
+(  9 , 'London' ,'z.png','dans une heure');
+
+
+
 /*!40000 ALTER TABLE `villes` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;

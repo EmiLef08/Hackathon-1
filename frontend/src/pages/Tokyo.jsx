@@ -1,4 +1,4 @@
-import { React, useState, useRef, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Image as ImageGrommet, Box, Carousel, Button } from "grommet";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
