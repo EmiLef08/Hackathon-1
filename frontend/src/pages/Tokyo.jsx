@@ -59,20 +59,20 @@ function Tokyo() {
           strictement tenus de respecter la loi et les devoirs
         </Box>
       </div>
-      <button
-        type="button"
-        onClick={() => setShowPopup(true)}
-        className="button"
-      >
-        {" "}
-        Trouver le samourai{" "}
-      </button>
-      {showPopup && (
-        <div className="popup">
-          <p>Bravo, vous avez trouvé !</p>
-        </div>
-      )}
-
+      <div>
+        <button
+          type="button"
+          onClick={() => setShowPopup(true)}
+          className="button"
+        >
+          Trouver le samourai
+        </button>
+        {showPopup && (
+          <div className="popup">
+            <p>Bravo, vous avez trouvé !</p>
+          </div>
+        )}
+      </div>
       <Footer />
     </div>
   );
