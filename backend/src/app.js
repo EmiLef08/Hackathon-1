@@ -7,12 +7,7 @@ const router = require("./router");
 const app = express();
 
 // use some application-level middlewares
-app.use(
-  cors({
-    origin: process.env.FRONTEND_URL ?? "http://localhost:3000",
-    optionsSuccessStatus: 200,
-  })
-);
+app.use(cors());
 
 app.use(express.json());
 
