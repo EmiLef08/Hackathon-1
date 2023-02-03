@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Solitreo&display=swap");
 
-.home{display: flex;
+
+.home{  
+    display: flex;
+
     flex-direction: column;
     justify-content: space-between;
     min-height: 100vh;

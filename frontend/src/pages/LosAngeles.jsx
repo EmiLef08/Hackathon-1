@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import LosAngeles from "../assets/images/LosAngeles.jpg";
 
-function Boston() {
+function losAngeles() {
   return (
     <div>
       <Header />
@@ -18,4 +18,4 @@ function Boston() {
   );
 }
 
-export default Boston;
+export default losAngeles;
