@@ -7,7 +7,7 @@ const placeProps = (name, color, showDrop) => ({
   ...(showDrop
     ? {
         content: (
-          <Box pad={{ horizontal: "small", vertical: "xsmall" }}>
+          <Box pad={{ horizontal: "medium", vertical: "xsmall" }}>
             <Text>{name}</Text>
           </Box>
         ),
@@ -25,62 +25,69 @@ function Map() {
   const [showDrops, setShowDrops] = React.useState(true);
   return (
     <div>
-      <Box align="end" pad="medium">
+      <Box align="end" pad="large">
         <CheckBox
           label="show"
           checked={showDrops}
           onChange={() => setShowDrops(!showDrops)}
         />
         <WorldMap
-          color="#6E0D25"
+          fill="horizontal"
           places={[
             {
               location: [-33.8830555556, 151.216666667],
-              ...placeProps("Sydney", "graph-1", showDrops),
+              ...placeProps("Sydney", "rgba(37, 62, 154, 0.8)", showDrops),
             },
             {
               location: [42.358056, -71.063611],
-              ...placeProps("Boston ", "graph-2", showDrops),
+              ...placeProps("Boston ", "rgba(187, 157, 127, 0.95)", showDrops),
               onClick: () => {
                 window.location.href = "/Boston";
               },
             },
             {
               location: [51.507222, -0.1275],
-              ...placeProps("London", "graph-3", showDrops),
+              ...placeProps("London", "rgba(0, 32, 60, 0.7)", showDrops),
             },
             {
               location: [-0.002222, -78.455833],
-              ...placeProps("Quito", "graph-1", showDrops),
+              ...placeProps("Quito", "rgba(37, 62, 154, 0.95)", showDrops),
               onClick: () => {
                 window.location.href = "/Quito";
               },
             },
             {
               location: [34.05, -118.25],
-              ...placeProps("Los Angeles", "graph-2", showDrops),
+              ...placeProps(
+                "Los Angeles",
+                "rgba(187, 157, 127, 0.95)",
+                showDrops
+              ),
+              onClick: () => {
+                window.location.href = "/LosAngeles";
+              },
             },
             {
               location: [35.689722, 139.692222],
-              ...placeProps("Tokyo", "graph-3", showDrops),
+              ...placeProps("Tokyo", "rgba(0, 32, 60, 0.7)", showDrops),
               onClick: () => {
                 window.location.href = "/Tokyo";
               },
             },
             {
               location: [78.22, 15.65],
-              ...placeProps("Svalbard", "graph-1", showDrops),
+              ...placeProps("Svalbard", "rgba(37, 62, 154, 0.8)", showDrops),
               onClick: () => {
                 window.location.href = "/Svalbard";
               },
             },
             {
               location: [-54.801944, -68.303056],
-              ...placeProps("Ushuaia", "graph-2", showDrops),
+              ...placeProps("Ushuaia", "rgba(187, 157, 127, 0.85)", showDrops),
             },
             {
               location: [-0.828097, 11.598909],
-              ...placeProps("Gabon", "graph-3", showDrops),
+              ...placeProps("Gabon", "rgba(0, 32, 60, 0.7)", showDrops),
             },
           ]}
         />
