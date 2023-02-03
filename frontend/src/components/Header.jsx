@@ -27,7 +27,7 @@ function Header() {
       navigate("/Quito");
     }
     if (e.target.value === `Los_Angeles`) {
-      navigate("/Quito");
+      navigate("/LosAngeles");
     }
   };
 
