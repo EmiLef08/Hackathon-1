@@ -1,17 +1,32 @@
 import React from "react";
-import Grid from "../components/Grid";
 import Footer from "../components/Footer";
-import Header from "../components/Header";
 import styles from "../styles/Home.module.css";
+import Bienvenue from "../assets/images/Bienvenue.png";
+import Interieur from "../assets/images/A_interieurdu.png";
+import Tardis from "../assets/images/TARDIS.png";
+import Map from "../components/Map";
 
 export default function Home() {
   return (
     <div className={styles.home}>
-      <div className={styles.header}>
-        <Header />
+      <div className={styles.titre}>
+        <h1>Bienvenue</h1>
+        <div className={styles.picture}>
+          <img src={Bienvenue} alt="Bienvenue" />
+          <img src={Interieur} alt="A l'intérieur du" />
+          <img src={Tardis} alt="TARDIS" />
+        </div>
+        <p>
+          Le Docteur a convaincu le TARDIS de vous octroyer un voyage,
+          choissisez bien ! Parmis la liste ci-dessous, vous trouverez des
+          villes et des époques, chacune différente d'une autre. Vous pouvez y
+          aller pendant un heure. Mais attention ! Ce choix est à vos risques et
+          périls.
+        </p>
       </div>
-      <h1 className={styles.titre}>Tempus itinerantur</h1>
-      <Grid />
+      <div className={styles.map}>
+        <Map />
+      </div>
       <div>
         <Footer />
       </div>
