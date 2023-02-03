@@ -1,4 +1,5 @@
 import { Image as ImageGrommet, Box, Carousel } from "grommet";
+import React, { useEffect, useRef } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import styles from "../styles/Tokyo.module.css";
@@ -6,11 +7,22 @@ import boston1 from "../assets/images/bostonStreet.png";
 import boston2 from "../assets/images/boston.png";
 import boston3 from "../assets/images/Broadway_theatres_1920.jpg";
 import boston4 from "../assets/images/boston4.jpg";
+import sound from "../assets/images/tardis-sound (2).mp3";
 import "../font/Kashima Demo.otf";
 
 function Boston() {
+  const audioRef = useRef(null);
+  useEffect(() => {
+    audioRef.current.play();
+  }, []);
   return (
     <div>
+      <div style={{ display: "none" }}>
+        <audio ref={audioRef} controls>
+          <track kind="captions" />
+          <source src={sound} type="audio/mpeg" />
+        </audio>
+      </div>
       <Header />
       <div className="box">
         <Box
