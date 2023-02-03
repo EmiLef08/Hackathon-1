@@ -32,11 +32,13 @@ function Header() {
       <box>
         <HeaderGrommet background="#6A4829" pad="medium">
           <Nav direction="row" align="center">
-            <Anchor label="Home" href="/" color="#EFD9B0" />
+            <Link to="/">
+              <Anchor label="Home" color="#EFD9B0" />
+            </Link>
             <form>
               <label>
                 Destinations{" "}
-                <select onClick={handleSelect}>
+                <select onChange={handleSelect}>
                   <option value="">---</option>
                   {villes.map((ville) => (
                     <option key={ville.id} value={ville.id}>
