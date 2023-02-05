@@ -43,6 +43,14 @@ function Tokyo() {
       </div>
       <Box fit="cover" className={styles.img}>
         <ImageGrommet src={imageSamourai} alt="fallback image" />
+      </Box>
+      <Box
+        justify="center"
+        height="Large"
+        width="Large"
+        fill="true"
+        alignSelf="baseline"
+      >
         <Button
           type="button"
           onClick={() => setShowPopup(true)}
