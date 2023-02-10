@@ -22,8 +22,8 @@ export default function Home() {
           Le Docteur a convaincu le TARDIS de vous octroyer un voyage,
           choissisez bien ! Parmis la liste ci-dessous, vous trouverez des
           villes et des époques, chacune différente d'une autre. Vous pouvez y
-          aller pendant un heure. Mais attention ! Ce choix est à vos risques et
-          périls.
+          aller pendant une heure. Mais attention ! Ce choix est à vos risques
+          et périls.
         </p>
       </div>
       <div className={styles.map}>

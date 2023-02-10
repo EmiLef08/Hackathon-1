@@ -1,21 +1,17 @@
-
-    
 .tardisFly {
-    position:absolute;
-     z-index: 1;
-    padding-top: 75rem;
-    animation: spin 0.5s infinite linear;
-    
+  position: absolute;
+  z-index: 1;
+  padding-top: 75rem;
+  animation: spin 0.5s infinite linear;
 }
 
 @keyframes spin {
-    from {
-        transform-origin:center;
-        transform: rotateY(-0deg);
-    }
+  from {
+    transform-origin: center;
+    transform: rotateY(-0deg);
+  }
 
-    to {
-        transform: rotateY(-360deg);
-        
-    }
+  to {
+    transform: rotateY(-360deg);
+  }
 }
